@@ -10,7 +10,7 @@ def read(fname):
 
 setup(
     name = "memcache_wrapper",
-    version = "1.0.0",
+    version = "1.0.22,
     packages=find_packages(exclude=["test", "test.*"]),
 
     install_requires = ['mockito', 'mockcache', 'python-memcached'],
@@ -18,6 +18,7 @@ setup(
     # metadata for upload to PyPI
     author = "xwhuang",
     author_email = "xwhuang@qnap.com",
+    url = "https://github.com/azraelxyz/memcache_wrapper",
     description=('A Python function wrapper to cache method results '
                  'using memcache'),
     long_description=read('README'),
