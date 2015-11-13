@@ -59,7 +59,7 @@ class Memcached(object):
                 key = self.safe_truncate(key)
             if self._mc_client and not self._bypass_cache:
                 cache = self._mc_client.get(key)
-                if cache:
+                if cache is not None:
                     return cache
 
             result = method(*args, **kwargs)
