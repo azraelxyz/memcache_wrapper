@@ -31,7 +31,5 @@ Parameters:
 
   bypass_cache: if True, bypass cache and save the result
 
-  cache_negative: if False, do not cache negative result,
-                  such as [], {}, and None.
-                  Otherwise, it will cache everything.
+  cache_negative: if False, do not cache negative result, such as [], {}, and None. Otherwise, it will cache everything.
 

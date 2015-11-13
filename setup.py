@@ -10,7 +10,7 @@ def read(fname):
 
 setup(
     name = "memcache_wrapper",
-    version = "1.0.2",
+    version = "1.0.3",
     packages=find_packages(exclude=["test", "test.*"]),
 
     install_requires = ['mockito', 'mockcache', 'python-memcached'],
