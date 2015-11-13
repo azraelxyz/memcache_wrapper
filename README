@@ -12,21 +12,26 @@ def myfunc(args):
     ...
 
 or
+
 mc = Memcached('/myprefix', mc_client)
 cached_myfunc = mc.wrap(myfunc)
 
-for short,
+For short,
 cached_myfunc = Memcached('/myprefix', mc_client).wrap(myfunc)
 
 See more examples at test/test_memcache_wrapper.py
 
 Parameters:
 
-prefix: used as memached's key prefix
-mc_client: memcache client instance, such as python-memcached or mockcache
-ttl: time to live in memcache, default: 10
-bypass_cache: if True, bypass cache and save the result
-cache_negative: if False, do not cache negative result,
-                such as [], {}, and None.
-                Otherwise, it will cache everything.
+  prefix: used as memached's key prefix
+
+  mc_client: memcache client instance, such as python-memcached or mockcache
+
+  ttl: time to live in memcache, default: 10
+
+  bypass_cache: if True, bypass cache and save the result
+
+  cache_negative: if False, do not cache negative result,
+                  such as [], {}, and None.
+                  Otherwise, it will cache everything.
 
